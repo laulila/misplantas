@@ -1,0 +1,277 @@
+{% extends 'App5/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Home Page
+{% endblock title %}
+
+{% block codigoDinamico %}
+
+<div class="container">
+    <h1>Bienvenido a Mi Jardin🌷 !</h1>
+</div>
+
+
+    <!-- Banner Principal -->
+    <div class="banner">
+        <h1>Welcome to My Garden🌷!</h1>
+        <img src="{% static 'App5/logo2.jpg' %}" alt="Imagen" class="logo">
+        <p>A shop for a Nature Lover.</p>  
+    </div>
+    <br><br>
+</div>
+
+<!-- Testimonios -->
+ <div id= "testimoniosCarousel" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+         <div class="carousel-item active">
+             <div class="testimonio">
+                 <p>"Compre aquí muchas plantas y todas duran muchísimo. Los plantines son de excelente calidad."</p>
+                 <p><strong> - Marie Claire</strong></p>
+             </div>
+         </div>
+         <div class="carousel-item">
+             <div class="testimonio">
+                     <p>"El precio es muy bueno y el trato es personalizado."</p>
+                     <p><strong>- Maca Renat</strong></p>
+                 </div>
+             </div>
+             <div class="carousel-item">
+                 <div class="testimonio">
+                     <p>"Los precios son bajos, y las recomendaciones para cuidar las plantas🌳 buenisimas."</p>
+                     <p><strong> - Corina Lopez </strong></p>
+                 </div>
+             </div>
+             <div class="carousel-item">
+                 <div class="testimonio">
+                     <p>"Las plantas duran muchisimo y florecen 🌸 todo el año, gracias por brindar una excelente atención."</p>
+                     <p><strong> - Linita Adorable</strong></p>
+                 </div>
+             </div>
+         </div>
+         <a class="carousel-control-prev" href="#testimoniosCarousel" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Anterior</span>
+         </a>
+         <a class="carousel-control-next" href="#testimoniosCarousel" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Siguiente</span>
+         </a>
+     </div>
+     <br><br>
+
+
+      <!-- Ofertas exclusivas -->
+ <div class="cta mt-5 text center">
+     <h2>Ofertas exclusivas, para mejorar tu  jardin interior/exterior o huerta</h2>
+ </div>
+ <div id="ofertasCarousel" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+         <div class="carousel-item active">
+             <div class="oferta">
+                <p>20% de descuento en arboles 🌳 frutales !</p>
+            </div>
+        </div>
+         <div class="carousel-item">
+             <div class="oferta">
+                 <p>15% de descuento en plantas de interior🌲.</p>
+             </div>
+         </div>
+         <div class="carousel-item">
+             <div class="oferta">
+                 <p>10% de descuento en fertilizantes🍀.</p>
+             </div>
+         </div>
+         <div class="carousel-item">
+             <div class="oferta">
+                 <p>12% de descuento para compras al por mayor.</p>
+             </div>
+         </div>
+     </div>
+     <a class="carousel-control-prev" href="#ofertasCarousel" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Anterior</span>
+     </a>
+     <a class="carousel-control-next" href="#ofertasCarousel" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Siguiente</span>
+     </a>
+ </div>
+ <br><br>
+ </div>
+ <!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $('.carousel').carousel({
+         interval: 4000
+     })
+</script>
+
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</div>
+
+<!--Nuestras Marcas -->
+<div class= "marcas mt-5">
+    <h2>Nuestros Productos</h2>
+    <div class="row">
+        <div class="col-md-2">
+            <img src="{% static 'App5/water1'  %}" alt="Marca 1" class="img-fluid">
+            </div> &nbsp;  &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'App5/water2' %}" alt="Marca 2" class="img-fluid">     
+            </div> &nbsp;  &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'App5/water3' %}" alt="Marca 3" class="img-fluid">     
+            </div> &nbsp;  &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'App5/marca4.png' %}" alt="Marca 4" class="img-fluid">     
+            </div> &nbsp;  &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'App5/marca5.png' %}" alt="Marca 5" class="img-fluid">     
+            </div> 
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Como funciona? -->
+     <div class="como-funciona mt-5">
+         <h2 class="text-center mb-4">Cómo funciona?</h2>
+         <div class="row text-center">
+             <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <div class="card-body paso bg-primary text-white rounded">
+                        <h3 class="card-title">1. Busca tu producto</h3>
+                        <p class="card-text">Utiliza nuestro buscador o navega por las categorias para encontrar el producto de tu elección.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4">
+                 <div class="card h-100 shadow-lg">
+                     <div class="card-body paso bg-success text-white rounded">
+                         <h3 class="card-title">2. Realiza tu compra</h3>
+                         <p class="card-text">Seleccionando el producto que deseas y el medio de pago, podrás realizar tu compra en forma segura</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="card h-100 shadow-lg">
+                     <div class="card-body paso bg-danger text-white rounded">
+                         <h3 class="card-title">3. Recibe tu pedido</h3>
+                         <p class="card-text"> Envío rápido a tu casa 🏠 o domicilio de tu preferencia.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <br> <br>  <br>
+     <!-- Preguntas Frecuentes -->
+     <div class="faq mt-5">
+         <h2> Preguntas Frecuentes</h2>
+         <div id="accordion">
+             <div class="card">
+                 <div class="card-header" id="headingOne">
+                     <h5 class= "mb-0">
+                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             ¿Cómo puedo devolver un  pedido?
+                         </button>
+                     </h5>
+                 </div>
+
+                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                     <div class="card-body">
+                         Puedes devolver el pedido al vivero, en un plazo máximo de 7 días hábiles desde la fecha de entrega. Debes presentar el pedido con el remito.
+                     </div>
+                 </div>
+             </div>
+             <div class="card">
+                 <div class="card-header" id="headingTwo">
+                     <h5 class="mb-0">
+                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"aria-controls="collapseTwo">
+                              Cuáles son los medios de pago aceptados?
+                         </button>
+                     </h5>
+                 </div>
+                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                     <div class="card-body">
+                         Nuestro sitio acepta todos los medios de pago
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br>  <br>
+
+   <!-- Mapa-->
+     <div class="contacto mt-5">  
+         <h2>DÓNDE ESTAMOS🌐?</h2>
+
+         <div class="row">
+             <div class="col-md-6">   
+                 <iframe 
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31511.22255457356!2d-58.5633442!3d-34.644814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e6ca407621%3A0xaed5b5b036e77238!2sAv.%20Gral.%20San%20Mart%C3%ADn%20319%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1634991962579!5m2!1ses-419!2sar" 
+                     width="800" height="600" 
+                     style="border:0;" 
+                     allowfullscreen="" 
+                     loading="lazy">
+                 </iframe>
+             </div>
+            </div>
+ </div>
+
+          <div class=" contacto mt-5">
+              <div class="row mt-4">
+                  <div class="col-md-12">
+                      <h3> Comunícate con nosotros</h3>
+
+                      <form action="{% url 'contacto' %}" method="post">
+                          {% csrf_token %}
+                          <div class="form-group">
+                              <label for="nombre">     Nombre:</label>
+                              <input type="text" class="form-control" id="nombre" name="nombre" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="email">    Email:</label>
+                              <input type="email" class="form-control" id="email" name="email" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="asunto"> Asunto:</label>
+                               <textarea class="form-control" id="asunto" name="asunto" rows="3"required></textarea>
+                          </div>
+                          <div class="form-group">
+                              <label for="mensaje"> Mensaje:</label>  
+                              <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                      </form>
+
+                   </div>
+               </div>
+           </div>
+  </div>
+
+</div>
+                              
+
+                        
+         
+                 
+                    
+
+
+
+
+                 
+     
+
+            
+             
+{% endblock %}
+
+
+ 
